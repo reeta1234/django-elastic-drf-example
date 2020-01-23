@@ -25,7 +25,7 @@ SECRET_KEY = 'f56rcwp8x4^jb8+8+-c9cj0uu25_x2ra(9j1x8%es(fgwy-6pd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -83,15 +83,26 @@ WSGI_APPLICATION = 'django_elastic_drf_example.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'postgres',
-        'PORT': '5432',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'postgres',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'postgres',
+        # 'HOST': 'postgres',
+        # 'PORT': '5432',
+
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'socialmedia',
+        'USER':'root',
+        'PASSWORD':'Tally@1234',
+        'HOST':'localhost'
     }
 }
 
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'http://localhost:9200/'
+    },
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
