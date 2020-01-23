@@ -1,5 +1,6 @@
 https://www.merixstudio.com/blog/elasticsearch-django-rest-framework/
 https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-18-04
+https://django-elasticsearch-dsl-drf.readthedocs.io/en/0.1.8/basic_usage_examples.html
 
 Global Install from Packages
 
